@@ -14,13 +14,13 @@ You should have received a copy of the GNU General Public License along with thi
 if not, see <http://www.gnu.org/licenses/>.
 
 Plugin Name: eBay Relevance Ad Integration
-Version: 1.0
+Version: 1.0.0.1
 Plugin URI: http://www.mediabeam.com
 Description: Mit diesem Plugin haben Sie einfach die Möglichkeit Ihre eBay Relevance Ads in Wordpress zu integrieren.
 Author: Daniel Kemper
 Author URI: http://www.mediabeam.com
 */
-define('EBAY_RELEVANCE_AD_VERSION',"1.0");
+define('EBAY_RELEVANCE_AD_VERSION',"1.0.0.1");
 
 /**
 * Function: wp_ebay_relevancead_init()
