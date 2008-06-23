@@ -4,7 +4,7 @@ Donate link: http://www.mediabeam.com
 Tags: eBay, RelevanceAd, Advertising
 Requires at least: 2.2
 Tested up to: 2.5.1
-Stable tag: /trunk/
+Stable tag: 1.0
 
 Das eBay RelevanceAd Plugin integriert eBay Relevance Ads in Ihren Wordpress Blog
 
