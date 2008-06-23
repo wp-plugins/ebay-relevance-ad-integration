@@ -13,10 +13,10 @@ See the GNU General Public License for more details.
 You should have received a copy of the GNU General Public License along with this program;
 if not, see <http://www.gnu.org/licenses/>.
 
-Plugin Name: eBay RelevanceAd Integration
+Plugin Name: eBay Relevance Ad Integration
 Version: 1.0
 Plugin URI: http://www.mediabeam.com
-Description: Mit diesem Plugin haben Sie einfach die Möglichkeit Ihre eBay RelevanceAds in Wordpress zu integrieren.
+Description: Mit diesem Plugin haben Sie einfach die Möglichkeit Ihre eBay Relevance Ads in Wordpress zu integrieren.
 Author: Daniel Kemper
 Author URI: http://www.mediabeam.com
 */
@@ -45,7 +45,7 @@ function wp_ebay_relevancead_init() {
 		die();
 	}
 
-	//add_submenu_page('plugins.php', 'eBay RelevanceAd', 8, __FILE__, 'era_toplevel_options_page');
+	//add_submenu_page('plugins.php', 'eBay Relevance Ad', 8, __FILE__, 'era_toplevel_options_page');
 }
 
 /**
@@ -56,7 +56,7 @@ function wp_ebay_relevancead_init() {
 */
 function wp_ebay_relevancead_add_pages()
 {
-	add_management_page('eBay RelevanceAd', 'eBay RelevanceAd', 8, 'ebayrelevancead', 'wp_ebay_relevancead_plugin');
+	add_management_page('eBay Relevance Ad', 'eBay Relevance Ad', 8, 'ebayrelevancead', 'wp_ebay_relevancead_plugin');
 }
 
 /**
@@ -97,14 +97,14 @@ function wp_ebay_relevancead_show_main_template()
 {
 	?>
 	<div class='wrap'>
-		<h2>eBay RelevanceAd</h2>
+		<h2>eBay Relevance Ad</h2>
 			<div id='message'></div>
 				<div style='padding-left: 20px; padding-bottom: 20px;'>
-					<p>eBay RelevanceAd - Wordpress Intergration hilft Ihnen beim einfachen Einbau von eBay RelevanceAds in Ihre Website.</p>
+					<p>eBay Relevance Ad - Wordpress Intergration hilft Ihnen beim einfachen Einbau von eBay Relevance Ads in Ihre Website.</p>
 				</div>
 				<div style='padding-left: 20px; padding-bottom: 30px;'>
 					<fieldset class='options'>
-						<legend id='era_list'><b>Aktuelle eBay RelevanceAds</b></legend>
+						<legend id='era_list'><b>Aktuelle eBay Relevance Ads</b></legend>
 							<table class='widefat'>
 								<thead>
 									<tr>
@@ -211,7 +211,7 @@ function wp_ebay_relevancead_show_add_template()
 	?>
 	<div class='wrap'>
 		<form method='post' action="<?php echo $_SERVER['REQUEST_URI']; ?>">
-		<h2>eBay RelevanceAd - Neues Template hinzufügen </h2>
+		<h2>eBay Relevance Ad - Neues Template hinzufügen </h2>
 	<?php
 	if ( isset($_POST['add_page_submit'])) {
 		$res = wp_ebay_relevancead_validate_page($_POST);
@@ -272,14 +272,14 @@ function wp_ebay_relevancead_show_preview_template($id)
 {
 	?>
 	<div class='wrap'>
-		<h2>eBay RelevanceAd - Vorschau</h2>
+		<h2>eBay Relevance Ad - Vorschau</h2>
 			<div style='padding-left:20px;padding-bottom:30px;text-align:center;'>
 			<?php
 			$template = wp_ebay_relevancead_fetch_template($id,false);
 			$era = wp_ebay_relevancead_get_affilinet_template($template,true);
 			echo $era;
 			?>
-			<p>Fügen Sie bitte folgendes Code-Snippet an der Stelle in Ihrer Seite ein, an der Sie das eBay RelevanceAd anzeigen möchten.</p>
+			<p>Fügen Sie bitte folgendes Code-Snippet an der Stelle in Ihrer Seite ein, an der Sie das eBay Relevance Ad anzeigen möchten.</p>
 
 			Innerhalb von Beitr&auml;gen und Seiten verwenden Sie bitte folgendes Code Snippet:
 			<code><br/><br/>
@@ -523,7 +523,7 @@ function wp_ebay_relevancead_show_edit_template($id)
 	?>
 		<div class='wrap'>
 		<form method='post'>
-			<h2>eBay RelevanceAd - Template bearbeiten</h2>
+			<h2>eBay Relevance Ad - Template bearbeiten</h2>
 	<?php
 	if ( isset($_POST['edit_page_submit'])) {
 		$res = wp_ebay_relevancead_validate_page($_POST);
@@ -731,7 +731,7 @@ function era_widget($args) {
 	}
 
 		// Registr the Sidebar Widget
-		register_sidebar_widget('eBay RelevanceAd', 'era_widget');
+		register_sidebar_widget('eBay Relevance Ad', 'era_widget');
 
     // We do this to set a description
     global $wp_registered_widgets;
